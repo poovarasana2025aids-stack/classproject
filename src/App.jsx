@@ -4,9 +4,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Tasks from './pages/tasks'
 import Login from './pages/login'
+import Tasks from '../src/pages/tasks'
 import Projects from './pages/projects'
+import Team from './pages/team'
+import Clients from './pages/clients'
+import Dashboard from './pages/dashboard'
+import Calender from './pages/calender'
+import Settings from './pages/settings'
+
 
 
 function App() {
@@ -32,11 +38,17 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/projects" element={<Projects/>}/>
+      <Route path="/" element={<Login/>}/>
       <Route path="/tasks" element={<Tasks/>}/>
-      <Route path="/login" element={<Login/>}/>
+      <Route path="/projects" element={<Projects/>}/>
+      <Route path="/team" element={<Team/>}/>
+      <Route path="/clients" element={<Clients/>}/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
+      <Route path="/calender" element={<Calender/>}/>
+      <Route path="/settings" element={<Settings/>}/>
     </Routes>
     </BrowserRouter>
+   
     {/*
     <div className="text-blue-500">HI</div>
     <div className="email">Email</div>
