@@ -21,7 +21,7 @@ function Register() {
         <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4"   >
         <div className="w-full max-w-md bg-white rounded-xl shadow-md border boder-gray-100 p-8">
             <div className="text-center md-6">
-                <h2 className="text-2xl font-bold text-gray-900">Register</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Register Page</h2>
             </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit1)} className="space-y-4">
