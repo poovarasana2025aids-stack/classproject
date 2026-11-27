@@ -12,12 +12,20 @@ function Register() {
     function onSubmit1(data){
         console.log(data)
         alert("register succes")
-        navigate("/")
+        navigate("/",{
+            state:data
+        })
     }
     return (
         <>
-        <form onSubmit={handleSubmit(onSubmit1)}>
-            <label>Name </label>
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 "   ></div>
+        <div className="w-full max-w-md bg-white rounded-xl shadow-md border boder-gray-100 p-8">
+            <div className="text-center md-6">
+                <h2 classname="text-2xlfont-bold text-gray-900">Register</h2>
+            </div>
+        </div>
+        <form onSubmit={handleSubmit(onSubmit1) className="space-y-4"}>
+            <label className>Name </label>
             <input placeholder="Enter your name" type="text" {...register("name")} />
             <p>{errors.name?.message}</p>
 
