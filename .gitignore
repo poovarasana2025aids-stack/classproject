@@ -1,0 +1,22 @@
+
+# Ignore all node_modules folders
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Ignore build files
+dist/
+build/
+
+# Ignore logs
+*.log
+npm-debug.log*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
